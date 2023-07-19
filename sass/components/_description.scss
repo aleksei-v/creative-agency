@@ -1,0 +1,9 @@
+.text-description {
+    
+    text-align: center;
+
+    @include font (20px, 400, 30px);
+    letter-spacing: 0.2px;
+
+    color: var(--major-text-color);
+}

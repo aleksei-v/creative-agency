@@ -1,0 +1,97 @@
+.hero {
+    padding-top: 0;
+}
+
+.hero__title {
+
+    font-family: 'Nunito', sans-serif;
+
+    max-width: 750px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    letter-spacing: 0.64px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+    @include font(60px, 900, 81px);
+
+    color: var(--color-titles);
+}
+
+.hero__desc {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+    max-width: 790px;
+}
+
+.hero__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.hero__image {
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero__area {
+    position: relative;
+}
+.hero-article {
+    position: absolute;
+    bottom: -2%;
+    right: 12%;
+    padding: 28px 20px;
+    background-color: var(--backgroud-light-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    
+}
+.hero-article__area {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.hero-article__image {
+    margin-right: 10px;
+}
+.hero-article__author {
+    @include font (10px, 600, 12px);
+    letter-spacing: 0.1px;
+}
+.hero-article__post {
+    color: var(--color-titles);
+    @include font (6px, 600, 8px);
+
+    color: var(--major-text-color);
+}
+.hero-article__review {
+    max-width: 125px;
+    @include font (10px, 400, 12px);
+    letter-spacing: 0.1px;
+}
+.great-review {
+    position: absolute;
+    top: 5%;
+    left: 12%;
+    padding: 15px 20px;
+    background-color: var(--backgroud-light-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.great-review__star {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.great-review__title {
+text-transform: uppercase;
+@include font (12px, 700, 14px);
+color: var(--major-text-color)
+}
+.great-review__grade {
+    @include font(24px, 400, 30px)
+}

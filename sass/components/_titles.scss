@@ -1,0 +1,11 @@
+.secondary-titles {
+    font-family: 'Nunito', sans-serif;
+
+    margin-bottom: 30px;
+
+    @include font(36px, 700, 42px);
+
+    color: var(--color-titles);
+}
+
+

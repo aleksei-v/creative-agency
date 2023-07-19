@@ -1,0 +1,27 @@
+.header {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 268px;
+}
+.logo {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.logo__title {
+    color: var(--color-titles);
+}
+.logo__first {
+    @include font (20px, 700, 24px)
+}
+.logo__second {
+    @include font (16px, 400, 24px)
+}
+.nav-list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 50px;
+}
+
+.nav-list__item {
+    padding: 12px 0;
+}

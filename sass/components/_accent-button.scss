@@ -1,0 +1,38 @@
+.accent-button {
+
+    cursor: pointer;
+    min-width: 185px;
+
+    padding: 12px 45px;
+    border-radius: 24px;
+    
+    border: 1px solid var(--accent-color);
+
+    font-family: inherit;
+    cursor: pointer;
+    @include font(16px, 700, 24px);
+    letter-spacing: 0.06em;
+
+    color: var(--accent-color);
+    background: var(--backgroud-light-color);
+
+    transition: background-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--secondary-text-color);
+    }
+
+}
+
+.btn-reverse {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+
+    &:hover,
+        &:focus {
+            color: var(--accent-color);
+            background: var(--backgroud-light-color);
+        }
+}
