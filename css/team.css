@@ -1,0 +1,28 @@
+.team {
+  text-align: center;
+}
+
+.team__area {
+  padding: 46px 0;
+}
+
+.team_gallery {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 65px;
+}
+
+.team__desc {
+  margin-bottom: 26px;
+}
+
+.team__button-list {
+  display: grid;
+  grid-template-columns: 170px 170px;
+  gap: 25px;
+}
+
+.team__image {
+  max-width: 562px;
+  max-height: 462px;
+}/*# sourceMappingURL=team.css.map */

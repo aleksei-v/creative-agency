@@ -1,0 +1,31 @@
+.portfolio {
+    display: grid;
+        place-items: center;
+}
+
+.portfolio__desc {
+    max-width: 674px;
+    margin-bottom: 48px;
+   
+}
+
+.portfolio-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items:center;
+    margin-bottom: 34px;
+    
+}
+.portfolio-list__item{
+    position: relative;
+}
+.portfolio__subject {
+    position: absolute;
+    text-align: center;
+    bottom: 40px;
+    left: 24px;
+    color: var(--backgroud-light-color);
+    @include font (24px, 700, 26px);
+    letter-spacing: 0.072px;
+}
