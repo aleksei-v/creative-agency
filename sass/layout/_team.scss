@@ -2,13 +2,44 @@
     text-align: center;
 }
 .team__area {
+    
     padding: 46px 0;
+
 }
 .team_gallery {
-    
+    position: relative;
     display: grid;
     grid-template-columns: auto auto;
     gap: 65px;
+        &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                
+                top: -10px;
+                left: -25px;
+                width: 100px;
+                height: 70px;
+                background-image: url(../../img/decoration-first-red.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: 0;
+            }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+        
+                    bottom: -10px;
+                    left: 493px;
+                    
+                    width: 100px;
+                    height: 70px;
+                    background-image: url(../../img/decoration-first-pink.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    
+                }
 }
 .team__desc {
     margin-bottom: 26px;
@@ -21,6 +52,8 @@
 }
 
 .team__image {
+    position: relative;
+    z-index: 100;
     max-width: 562px;
     max-height: 462px;
 }

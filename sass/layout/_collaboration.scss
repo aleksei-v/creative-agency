@@ -1,0 +1,35 @@
+.collaboration {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 300px;
+
+    padding-bottom: 180px;
+    padding-top: 200px;
+}
+
+.collaboration__title {
+ max-width: 400px;
+}
+
+.collaboration__desc {
+    text-align: left;
+    margin-bottom: 38px;
+}
+
+.collaboration-list {
+    padding-top: 45px;
+    position: relative;
+
+}
+.collaboration-list__team {
+    position: relative;
+    z-index: 100;
+    border-radius: 16px;
+}
+.collaboration-list__speech {
+    z-index: 0;
+    position: absolute;
+    border-radius: 16px;
+    top: -10%;
+    right: -10%;
+}

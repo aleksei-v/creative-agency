@@ -61,4 +61,43 @@
     <path d="M3 12H20" stroke="#377DFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
     <path d="M21 12H20" stroke="#377DFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
+    <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 72" id="decoration-first">
+    <ellipse cx="3.42554" cy="2.92889" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="3.42554" cy="46.7133" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="40.8157" cy="2.92889" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="40.8157" cy="46.7133" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="78.2056" cy="2.92889" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="78.2056" cy="46.7133" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="3.42554" cy="24.821" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="3.42554" cy="68.6052" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="40.8157" cy="24.821" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="40.8157" cy="68.6052" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="78.2056" cy="24.821" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="78.2056" cy="68.6052" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="22.1206" cy="2.92889" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="22.1206" cy="46.7133" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="59.5105" cy="2.92889" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="59.5105" cy="46.7133" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="96.9006" cy="2.92889" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="96.9006" cy="46.7133" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="22.1206" cy="24.821" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="22.1206" cy="68.6052" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="59.5105" cy="24.821" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="59.5105" cy="68.6052" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="96.9006" cy="24.821" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+    <ellipse cx="96.9006" cy="68.6052" rx="2.5" ry="2.62469" fill="#377DFF"></ellipse>
+  </symbol>
+   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 25" id="burger-menu">
+    <path d="M22.0027 12.7014H10.0027" stroke="#1D1D1D" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M25.0027 5.70142H7.00269" stroke="#1D1D1D" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M25.0027 19.7014H7.00269" stroke="#1D1D1D" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
+   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="vector">
+    <defs></defs>
+    <title></title>
+    <g id="cross">
+      <line x1="7" x2="25" y1="7" y2="25"></line>
+      <line x1="7" x2="25" y1="25" y2="7"></line>
+    </g>
+  </symbol>
 </svg>

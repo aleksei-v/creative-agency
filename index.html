@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Quicksand:wght@400;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.min.css">
+  
     <title>Agency Creative</title>
     
 </head>
 <body>
     <!--Header-->
-    <header class="header container section">
+    <header class="header container section ">
     
             <a href="" class="link logo">
                 <svg width="50" height="50">
@@ -27,6 +29,11 @@
                     <span class="logo__second">Creative</span>
                 </div>
             </a>
+            <button type="button" class="burger-menu" data-menu-open>
+                <svg class="burger-menu__icon" width="40" height="40">
+                    <use href="./img/sprite.svg#burger-menu"></use>
+                </svg>
+            </button>
             <nav>
                 <ul class="list nav-list">
                     <li class="nav-list__item">Home</li>
@@ -36,6 +43,25 @@
                 </ul>
             </nav>
             <button class="accent-button">Contact us</button>
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu__container">
+                    <button type="button" class="mobile-menu__close" data-menu-close>
+                        <svg class="btn-close__icon" width="18" height="18">
+                            <use href="./img/sprite.svg#burger-menu"></use>
+                        </svg>
+                    </button>
+                    <ul class="mobile-list list">
+                        <li class="mobile-list__item"><a class="mobile-list__link link mobile-list__link--active"
+                                href="./index.html">Home</a></li>
+                        <li class="mobile-list__item"><a class="mobile-list__link link" href="./portfolio.html">About</a></li>
+                        <li class="mobile-list__item"><a class="mobile-list__link link" href="">Sevices</a></li>
+                        <li class="mobile-list__item"><a class="mobile-list__link link" href="">Projects</a></li>
+                    </ul>
+                    <div class="cotacts-wrapper">
+                    <button class="accent-button">Contact us</button>
+                    </div>
+                </div>
+            </div>
     </header>
 <main>
     <!--Hero-->
@@ -176,86 +202,128 @@
         <section class="container section testimonials">
             <p class="secondary-subtitles">Testimonials</p>
             <h2 class="secondary-titles testimonials__title">People Talk about us</h2>
-            <ul class="list testimonials-list"> 
-                <li class="testimonials-list__item">
-                    <div class="testimonials-list__info">
-                        <img class="testimonials-list__img" src="./img/creative-manager.jpg" alt="">
-                        <div>
-                            <h3 class="testimonials-list__name">Angel Rose</h3>
-                            <p class="testimonials-list__position">Creative Manager</p>
+            <div class="swiper">
+                <ul class="swiper-wrapper">
+                    <!-- Slides -->
+                    <li class="swiper-slide testimonials-list__item">
+                        <div class="testimonials-list__info">
+                            <img class="testimonials-list__img" src="./img/creative-manager.jpg" alt="">
+                            <div>
+                                <h3 class="testimonials-list__name">Angel Rose</h3>
+                                <p class="testimonials-list__position">Creative Manager</p>
+                            </div>
                         </div>
-                    </div>
-                        <p class="text-description">There are many variations passages of Lorem Ipsum majority some by words which don't look .</p>
-                
-                </li>
-                <li class="testimonials-list__item">
-                    <div class="testimonials-list__info">
-                        <img class="testimonials-list__img" src="./img/creative-manager.jpg" alt="">
-                        <div>
-                            <h3 class="testimonials-list__name">Angel Rose</h3>
-                            <p class="testimonials-list__position">Creative Manager</p>
+                        <p class="text-description testimonials-list_desc">There are many variations passages of Lorem Ipsum majority some by words which don't look .
+                        </p>
+                    </li>
+                    <li class="swiper-slide testimonials-list__item">
+                        <div class="testimonials-list__info">
+                            <img class="testimonials-list__img" src="./img/creative-manager.jpg" alt="">
+                            <div>
+                                <h3 class="testimonials-list__name">Angel Rose</h3>
+                                <p class="testimonials-list__position">Creative Manager</p>
+                            </div>
                         </div>
-                    </div>
-                        <p class="text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, cum!</p>
-                    
-                </li>
-                <li class="testimonials-list__item">
-                    <div class="testimonials-list__info">
-                        <img class="testimonials-list__img" src="./img/creative-manager.jpg" alt="">
-                        <div>
-                            <h3 class="testimonials-list__name">Angel Rose</h3>
-                            <p class="testimonials-list__position">Creative Manager</p>
+                        <p class="text-description testimonials-list_desc">There are many variations passages of Lorem Ipsum majority some
+                            by words which don't look .
+                        </p>
+                    </li>
+                    <li class="swiper-slide testimonials-list__item">
+                        <div class="testimonials-list__info">
+                            <img class="testimonials-list__img" src="./img/creative-manager.jpg" alt="">
+                            <div>
+                                <h3 class="testimonials-list__name">Angel Rose</h3>
+                                <p class="testimonials-list__position">Creative Manager</p>
+                            </div>
                         </div>
-                    </div>
-                        <p class="text-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error officia similique minus veniam unde, magnam libero magni tempore voluptatibus cumque!</p>
-                
-                </li>
-            </ul>
+                        <p class="text-description testimonials-list_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus commodi maiores ipsam perspiciatis ab iste!
+                        </p>
+                    </li>
+                    <li class="swiper-slide testimonials-list__item">
+                        <div class="testimonials-list__info">
+                            <img class="testimonials-list__img" src="./img/creative-manager.jpg" alt="">
+                            <div>
+                                <h3 class="testimonials-list__name">Angel Rose</h3>
+                                <p class="testimonials-list__position">Creative Manager</p>
+                            </div>
+                        </div>
+                        <p class="text-description testimonials-list_desc">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, repellat! Expedita, laborum quos sed impedit saepe reprehenderit dolorum beatae ad debitis quae nesciunt. Fugit perspiciatis a quisquam, non iure asperiores.
+                        </p>
+                    </li>
+                    <li class="swiper-slide testimonials-list__item">
+                        <div class="testimonials-list__info">
+                            <img class="testimonials-list__img" src="./img/creative-manager.jpg" alt="">
+                            <div>
+                                <h3 class="testimonials-list__name">Angel Rose</h3>
+                                <p class="testimonials-list__position">Creative Manager</p>
+                            </div>
+                        </div>
+                        <p class="text-description testimonials-list_desc">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, totam!
+                        </p>
+                    </li>
+       
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+            </div>
         </section>
         <!--Collaboration -->
-        <section class="container section">
-        <h2 class="secondary-titles">Interesting Collaboration With Us?</h2> 
-        <p class="text-description">Help you to reach your business goal</p>
-        <button class="accent-button btn-reverse">Get Started</button>
-        <ul class="list">
-            <li><img src="./img/team-work.jpg" alt=""></li>
-            <li><img src="./img/meeting.jpg" alt=""></li>
+        <section class="container section collaboration">
+        <div class="collaboration__info"> 
+            <h2 class="secondary-titles collaboration__title">Interesting Collaboration With Us?</h2> 
+            <p class="text-description collaboration__desc">Help you to reach your business goal</p>
+            <button class="accent-button btn-reverse">Get Started</button>
+        </div>
+        <ul class="list collaboration-list">
+            <li><img class="collaboration-list__team" src="./img/team-work.jpg" alt=""></li>
+            <li><img class="collaboration-list__speech" src="./img/meeting.jpg" alt=""></li>
         </ul>
         </section>
     </main>
-    <footer class="container">
-        <a href="" class="link">
-        <svg class="" width="20" height="20">
-            <use href="./img/sprite.svg#group"></use>
-        </svg>
-        Agency Creative</a>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container footer-container"> 
+        <div class="footer-info">
+        <a href="" class="link logo footer-logo">
+            <svg width="50" height="50">
+                <use href="./img/sprite.svg#group"></use>
+            </svg>
+            <div class="logo__title">
+                <span class="logo__first">Agency</span>
+                <span class="logo__second">Creative</span>
+            </div>
+        </a>
         <div>
-            <ul class="list">
-                <li>
-                    <h2>Terms &amp; policies</h2>
-                    <ul class="list">
-                        <li>Terms of Service</li>
-                        <li>Privacy Policy</li>
+            <ul class="list footer-info-list">
+                <li class="footer-info-list__item">
+                    <h2 class="footer-info-list__title">Terms &amp; policies</h2>
+                    <ul class="list footer-info-sublist">
+                        <li class="footer-info-sublist__item">Terms of Service</li>
+                        <li class="footer-info-sublist__item">Privacy Policy</li>
                     </ul>
                 </li>
-                <li>
-                    <h2>Company</h2>
-                    <ul class="list">
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Contact Us</li>
+                <li class="footer-info-list__item">
+                    <h2 class="footer-info-list__title">Company</h2>
+                    <ul class="list footer-info-sublist">
+                        <li class="footer-info-sublist__item">Home</li>
+                        <li class="footer-info-sublist__item">About Us</li>
+                        <li class="footer-info-sublist__item">Contact Us</li>
                     </ul>
                 </li>
-                <li>
-                    <h2>Contact</h2>
-                    <ul class="list">
-                        <li><a href="tel:380995125521" class="link">(+380) 995125521</a></li>
-                        <li><a href="mailto:agecnycr@gmail.com" class="link">agecnycr@gmail.com</a></li>
+                <li class="footer-info-list__item">
+                    <h2 class="footer-info-list__title">Contact</h2>
+                    <ul class="list footer-info-sublist">
+                        <li class="footer-info-sublist__item"><a href="tel:380995125521" class="link footer-info-sublist__link">(+380) 995125521</a></li>
+                        <li class="footer-info-sublist__item"><a href="mailto:agecnycr@gmail.com" class="link footer-info-sublist__link">agecnycr@gmail.com</a></li>
                     </ul>
                 </li>
-                <li>
-                    <h2>Location</h2>
-                    <address>
+                <li class="footer-info-list__item">
+                    <h2 class="footer-info-list__title">Location</h2>
+                    <address class="adress">
                         PT Osiris Real Estate Internasional
                     
                         Jl. KH. Wahid Hasyim Kel No.10D
@@ -266,27 +334,43 @@
             </ul>
             
         </div>
+        </div>
         <div>
-            <ul class="list">
-                <li><a href="" class="link"><svg class="" width="20" height="20">
+            <ul class="list social-list">
+                <li class="social-list__item"><a href="" class="link social-list__link"><svg class="social-list__icon" width="20" height="20">
                             <use href="./img/sprite.svg#facebook"></use>
                         </svg></a></li>
-                <li><a href="" class="link"><svg class="" width="20" height="20">
+                <li class="social-list__item"><a href="" class="link social-list__link"><svg class="social-list__icon" width="20" height="20">
                             <use href="./img/sprite.svg#instagram"></use>
                         </svg></a></li>
-                <li><a href="" class="link"><svg class="" width="20" height="20">
+                <li class="social-list__item"><a href="" class="link social-list__link"><svg class="social-list__icon" width="20" height="20">
                             <use href="./img/sprite.svg#linkedin"></use>
                         </svg></a></li>
-                <li><a href="" class="link"><svg class="" width="20" height="20">
+                <li class="social-list__item"><a href="" class="link social-list__link"><svg class="social-list__icon" width="20" height="20">
                             <use href="./img/sprite.svg#mail"></use>
                         </svg></a></li>
-                <li><a href="" class="link"><svg class="" width="20" height="20">
+                <li class="social-list__item"><a href="" class="link social-list__link"><svg class="social-list__icon" width="20" height="20">
                             <use href="./img/sprite.svg#twitter"></use>
                         </svg></a></li>
             </ul>
         </div>
-        <span>&copy;</span> 2023 Agency Creative. All Rights Reserved.
-
+        <p class="copyright"><span >&copy;</span> 2023 Agency Creative. All Rights Reserved.</p>
+    </div>
     </footer>
 </body>
+<script src="./index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>const swiper = new Swiper('.swiper', {
+        direction: 'horizontal',
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });</script>
 </html>

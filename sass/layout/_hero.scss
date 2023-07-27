@@ -1,5 +1,25 @@
+@keyframes slideInFromTop {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes imgScale {
+    from {
+            transform: scale(0.2);
+        }
+    
+        to {
+            transform: scale(1);
+        }
+}
 .hero {
     padding-top: 0;
+
+    animation: slideInFromTop 1200ms forwards;
 }
 
 .hero__title {
@@ -33,14 +53,47 @@
 }
 
 .hero__image {
-
+    position: relative;
+    z-index: 1;
+    animation: imgScale 1500ms forwards;
     margin-left: auto;
     margin-right: auto;
+
 }
 .hero__area {
     position: relative;
-}
+
+    &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            left: 420px;
+            top: -15px;
+            width: 100px;
+            height: 70px;
+            background-image: url(../../img/decoration-first.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    &::after {
+        content: "";
+            position: absolute;
+            z-index: 0;
+            display: block;
+            left: 450px;
+            bottom: -15px;
+            width: 100px;
+            height: 70px;
+            background-image: url(../../img/decoration-first-red.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+    }
+
+
 .hero-article {
+    z-index: 10;
     position: absolute;
     bottom: -2%;
     right: 12%;
@@ -74,6 +127,7 @@
     letter-spacing: 0.1px;
 }
 .great-review {
+    z-index: 10;
     position: absolute;
     top: 5%;
     left: 12%;

@@ -1,14 +1,36 @@
+
+@keyframes headerScale {
+    from {
+            transform: translateX(25%);
+        }
+    
+        to {
+            transform: translateX(0);
+        }
+}
+
+@media screen and (min-width: 768px) {
+
+    .mobile-menu,
+    .burger-menu {
+        display: none;
+    }
+}
 .header {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 268px;
+    gap: 340px;
+
+    animation: headerScale 1000ms forwards;
 }
 .logo {
     display: grid;
     grid-template-columns: auto auto;
+    gap: 10px;
 }
 .logo__title {
     color: var(--color-titles);
+    max-width: 72px;
 }
 .logo__first {
     @include font (20px, 700, 24px)
