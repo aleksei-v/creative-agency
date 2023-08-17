@@ -1,54 +1,13 @@
 .team {
     text-align: center;
 }
-.team__area {
-    
-    padding: 46px 0;
-
-}
-.team_gallery {
-    position: relative;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 65px;
-        &::before {
-                content: "";
-                position: absolute;
-                display: block;
-                
-                top: -10px;
-                left: -25px;
-                width: 100px;
-                height: 70px;
-                background-image: url(../../img/decoration-first-red.svg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                z-index: 0;
-            }
-                &::after {
-                    content: "";
-                    position: absolute;
-                    display: block;
-        
-                    bottom: -10px;
-                    left: 493px;
-                    
-                    width: 100px;
-                    height: 70px;
-                    background-image: url(../../img/decoration-first-pink.svg);
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    
-                }
-}
 .team__desc {
-    margin-bottom: 26px;
+    margin-bottom: 35px;
 }
-
 .team__button-list {
     display: grid;
-    grid-template-columns: 170px 170px;
-    gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
 }
 
 .team__image {
@@ -56,4 +15,67 @@
     z-index: 100;
     max-width: 562px;
     max-height: 462px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+    .team__image {
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 1399px) {
+    .team__area {
+        margin-bottom: 66px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .team__image {
+        order: 1;
+    }
+    .team__area {
+        order: 2;
+    }
+    .team_gallery {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 65px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+
+            top: -10px;
+            left: -25px;
+            width: 100px;
+            height: 70px;
+            background-image: url(../../img/decoration-first-red.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 0;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+
+            bottom: -10px;
+            left: 493px;
+
+            width: 100px;
+            height: 70px;
+            background-image: url(../../img/decoration-first-pink.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+    }
+    .team__desc {
+        margin-bottom: 26px;
+    }
+    .team__button-list {
+        grid-template-columns: 170px 170px;
+        gap: 25px;
+    }
 }

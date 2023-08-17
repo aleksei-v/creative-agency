@@ -1,13 +1,8 @@
 .services {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 155px;
-    align-items:baseline;
+    text-align: center;
 }
 
-.services__title {
-    max-width: 420px;
-}
+
 
 .services__desc {
     margin-bottom: 36px;   
@@ -15,13 +10,7 @@
 
 .services__more {
     display: block;
-    text-align: end;
-}
-
-.services-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    text-align: start;
 }
 
 .services-list__link {
@@ -34,7 +23,6 @@
 }
 
 .services-list__icon {
-    background-color: var(--accent-color);
     width: 70px;
     height: 70px;
     display: flex;
@@ -44,21 +32,11 @@
     border-radius: 50%
 }
 
-.services-list__icon--settings {
-    background-color: #FF2D2D;
-}
-.services-list__icon--tool {
-    background-color: #7CE761;
-}
-.services-list__icon--tv {
-    background-color: #FFA800;
-}
-.services-list__item{
+
+.services-list__item {
     max-width: 262px;
     max-height: 270px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.10);
         transition: transform 250ms var(--timing-function);
 
     &:hover{
@@ -68,10 +46,46 @@
 }
 .services-list__title {
     max-width: 156px;
-    color: var(--color-titles);
     @include font (22px, 700, 32px)
 }
 
 .services-list__item--bottom {
     padding: 50px 90px;
+}
+@media screen and (max-width: 767px) {
+    .services-list__item {
+        margin: 0 auto;
+    }   
+    .services-list__item:not(:last-child) {
+        margin-bottom: 35px;
+    }
+}
+@media screen and (max-width: 1399px) {
+    .services__more {
+        margin-bottom: 27px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .services-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        place-items: center;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 155px;
+        align-items: baseline;
+        }
+
+    .services__more {
+        text-align: end;
+    }
+    .services__title {
+        text-align: start;
+        max-width: 420px;
+    }
 }

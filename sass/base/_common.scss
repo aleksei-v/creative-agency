@@ -45,7 +45,17 @@ img {
     text-decoration: none;
 }
 
-.section {
-    padding-top: 70px;
-    padding-bottom: 70px;
+@media screen and (max-width: 1399px) {
+    .section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
+
+@media screen and (min-width: 1400px) {
+    .section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+

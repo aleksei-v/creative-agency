@@ -1,43 +1,59 @@
 
 @keyframes headerScale {
     from {
-            transform: translateX(25%);
+            transform: translateX(-25%);
         }
     
         to {
             transform: translateX(0);
         }
 }
+.logo {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+}
+.logo__title {
+    max-width: 72px;
+}
 
-@media screen and (min-width: 768px) {
+.logo__first {
+    @include font (20px, 700, 24px)
+}
+
+.logo__second {
+    @include font (16px, 400, 24px)
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-list__item a {
+    @include font (18px, 400, 24px);
+    transition: color 250ms var(--timing-function);
+}
+.nav-list__item--active a {
+    font-weight: 500;
+}
+@media screen and (min-width: 1400px) {
 
     .mobile-menu,
     .burger-menu {
         display: none;
     }
 }
+@media screen and (max-width: 1399px) {
+    .navigation,
+    .header__button {
+        display: none;
+    }
+}
+@media screen and (min-width: 1400px) {
 .header {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 340px;
-
-    animation: headerScale 1000ms forwards;
-}
-.logo {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
-}
-.logo__title {
-    color: var(--color-titles);
-    max-width: 72px;
-}
-.logo__first {
-    @include font (20px, 700, 24px)
-}
-.logo__second {
-    @include font (16px, 400, 24px)
-}
+        display: flex;
+        animation: headerScale 1000ms forwards;
+    }
 .nav-list {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -46,4 +62,5 @@
 
 .nav-list__item {
     padding: 12px 0;
+}
 }

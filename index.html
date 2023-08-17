@@ -11,15 +11,25 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" title="theme" href="#">
     <link rel="stylesheet" href="./css/main.min.css">
   
     <title>Agency Creative</title>
     
 </head>
 <body>
+    <div class="theme">
+        <svg class="theme__change" data-theme="light" width="40" height="40">
+            <use href="./img/sprite.svg#light"></use>
+        </svg>
+        <svg class="theme__change" data-theme="dark" width="40" height="40">
+            <use href="./img/sprite.svg#dark"></use>
+        </svg>
+    </div>
+    <script src="./js/switcher.js"></script>
     <!--Header-->
-    <header class="header container section ">
-    
+    <header class="section ">
+    <div class="container header">
             <a href="" class="link logo">
                 <svg width="50" height="50">
                     <use href="./img/sprite.svg#group"></use>
@@ -30,258 +40,246 @@
                 </div>
             </a>
             <button type="button" class="burger-menu" data-menu-open>
-                <svg class="burger-menu__icon" width="40" height="40">
+                <svg class="burger-menu__icon" width="50" height="50">
                     <use href="./img/sprite.svg#burger-menu"></use>
                 </svg>
             </button>
-            <nav>
+            <nav class="navigation">
                 <ul class="list nav-list">
-                    <li class="nav-list__item">Home</li>
-                    <li class="nav-list__item">About</li>
-                    <li class="nav-list__item">Services</li>
-                    <li class="nav-list__item">Projects</li>
+                    <li class="nav-list__item nav-list__item--active"><a href="#" class="link">Home</a></li>
+                    <li class="nav-list__item"><a href="#" class="link">About</a></li>
+                    <li class="nav-list__item"><a href="#" class="link">Services</a></li>
+                    <li class="nav-list__item"><a href="#" class="link">Projects</a></li>
                 </ul>
+           
             </nav>
-            <button class="accent-button">Contact us</button>
+            <button class="accent-button header__button">Contact us</button>
+            
             <div class="mobile-menu" data-menu>
                 <div class="container mobile-menu__container">
                     <button type="button" class="mobile-menu__close" data-menu-close>
-                        <svg class="btn-close__icon" width="18" height="18">
-                            <use href="./img/sprite.svg#burger-menu"></use>
+                        <svg class="btn-close__icon" width="20" height="20">
+                            <use href="./img/sprite.svg#vector"></use>
                         </svg>
                     </button>
                     <ul class="mobile-list list">
                         <li class="mobile-list__item"><a class="mobile-list__link link mobile-list__link--active"
                                 href="./index.html">Home</a></li>
-                        <li class="mobile-list__item"><a class="mobile-list__link link" href="./portfolio.html">About</a></li>
-                        <li class="mobile-list__item"><a class="mobile-list__link link" href="">Sevices</a></li>
-                        <li class="mobile-list__item"><a class="mobile-list__link link" href="">Projects</a></li>
+                        <li class="mobile-list__item"><a class="mobile-list__link link" href="#">About</a></li>
+                        <li class="mobile-list__item"><a class="mobile-list__link link" href="#">Sevices</a></li>
+                        <li class="mobile-list__item"><a class="mobile-list__link link" href="#">Projects</a></li>
                     </ul>
                     <div class="cotacts-wrapper">
-                    <button class="accent-button">Contact us</button>
+                    <button class="accent-button burger-menu__button">Contact us</button>
                     </div>
                 </div>
+            </div>
             </div>
     </header>
+
 <main>
     <!--Hero-->
-        <section class="hero container section">
-            <h1 class="hero__title">Make your dream business goal come true</h1>
-            <p class="text-description hero__desc">when you need us for improve your business,<br/> then come with us to help your business have reach it, you
-            just sit and feel that goal</p>
-            <button class="hero__button accent-button btn-reverse">Start Project</button>
-            <div class="hero__area">
-                <img class="hero__image" src="./img/hero.jpg" alt="agency hero">
-            
-            <article class="hero-article">
-                <div class="hero-article__area">
-                    <img src="./img/bill.jpg" class="hero-article__image" alt="CEO UpTech">
-                    <div>
-                        <h3 class="hero-article__author">Bill Adams</h3>
-                        <p class="hero-article__post">CEO UpTech</p>
+        <section class="hero section">
+            <div class="container">
+                <h1 class="hero__title">Make your dream business goal come true</h1>
+                <p class="text-description hero__desc">when you need us for improve your business,<br/> then come with us to help your business have reach it, you
+                just sit and feel that goal</p>
+                <button class="hero__button accent-button btn-reverse">Start Project</button>
+                <div class="hero__area">
+                    <picture>
+                        <source srcset="./img/hero.jpg" media="(min-width: 768px)"
+                            type="image/jpg" />
+                        <source srcset="./img/hero-mobile.jpg" media="(max-width: 767px)" />
+                        <img class="hero__image" src="./img/hero.jpg" alt="agency hero">
+                    </picture>
+                <article class="hero-article">
+                    <div class="hero-article__area">
+                        <img src="./img/bill.jpg" class="hero-article__image" alt="CEO UpTech">
+                        <div>
+                            <h3 class="hero-article__author">Bill Adams</h3>
+                            <p class="hero-article__post">CEO UpTech</p>
+                        </div>
                     </div>
+                <p class="hero-article__review">“ This team is really the best in its field,I don't regret working with them, and will come back again thanks “</p>
+                </article>
+                <div class="great-review">
+                    <div class="great-review__star">
+                        <svg class="great-review__img" width="16" height="16">
+                            <use href="./img/sprite.svg#star"></use>
+                        </svg>
+                        <h3 class="great-review__title">Great Project</h3>
+                    </div>
+                    <p class="great-review__grade">800+ Done</p>
                 </div>
-            <p class="hero-article__review">“ This team is really the best in its field,I don't regret working with them, and will come back again thanks “</p>
-            </article>
-            <div class="great-review">
-                <div class="great-review__star">
-                    <svg class="great-review__img" width="20" height="20">
-                        <use href="./img/sprite.svg#star"></use>
-                    </svg>
-                    <h3 class="great-review__title">Great Project</h3>
                 </div>
-                <p class="great-review__grade">800+ Done</p>
-            </div>
             </div>
         </section>
         <!--Our team-->
-        <section class="container section team">
-            <p class="secondary-subtitles">About Us</p>
-            <h2 class="secondary-titles">Our Teammate</h2>
-            <div class="team_gallery">
-                <img class="team__image" src="./img/our-team.jpg" alt="">
-                <div class="team__area">
-                <p class="text-description team__desc">We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have.
-                make your content look interesting and make people look for your business.</p>
-                <p class="text-description team__desc">We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have.
-                make your content look interesting and make people look for your business</p>
-                <ul class="list team__button-list">
-                    <li><button class="accent-button btn-reverse">About us</button></li>
-                    <li><button class="accent-button">Our Story</button></li>
-                </ul>
+        <section class="section team">
+            <div class="container">
+                <p class="secondary-subtitles">About Us</p>
+                <h2 class="secondary-titles">Our Teammate</h2>
+                <div class="team_gallery">
+                    <div class="team__area">
+                    <p class="text-description team__desc">We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have.
+                    make your content look interesting and make people look for your business.</p>
+                    <p class="text-description team__desc">We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have.
+                    make your content look interesting and make people look for your business</p>
+                    <ul class="list team__button-list">
+                        <li><button class="accent-button btn-reverse">About us</button></li>
+                        <li><button class="accent-button">Our Story</button></li>
+                    </ul>
+                    </div>
+                    <picture>
+                        <source srcset="./img/our-team.jpg" media="(min-width: 768px)" type="image/jpg" />
+                        <source srcset="./img/our-team-mobile.jpg" media="(max-width: 767px)" />
+                        <img class="team__image" src="./img/our-team.jpg" alt="">
+                    </picture>
                 </div>
             </div>
         </section>
         <!--Our services-->
-        <section class="container section services">
-            <div>
-            <p class="secondary-subtitles">Our services</p>
-            <h2 class="secondary-titles services__title">Perfect and Fast Movement</h2>
-            <p class="text-description services__desc">We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have.
-            make your content look interesting and make people look for your business</p>
-            <a href="" class="link secondary-subtitles services__more">Read more
-                <svg class="" width="16" height="16">
-                    <use href="./img/sprite.svg#arrow"></use>
-                </svg>
-            </a>
-            </div>
-            <ul class="list services-list">
-                <li class="services-list__item">
-                    <a href="" class="link services-list__link">
-                        
-                            <div class="services-list__icon">
-                                <svg class="" width="29" height="29">
-                                <use href="./img/sprite.svg#monitor"></use>
-                            </svg>
-                        </div>
+        <section class="section">
+            <div class="container services">
+                <div>
+                <p class="secondary-subtitles">Our services</p>
+                <h2 class="secondary-titles services__title">Perfect and Fast Movement</h2>
+                <p class="text-description services__desc">We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have.
+                make your content look interesting and make people look for your business</p>
+                <a href="" class="link secondary-subtitles services__more">Read more
+                    <svg class="" width="16" height="16">
+                        <use href="./img/sprite.svg#arrow"></use>
+                    </svg>
+                </a>
+                </div>
+                <ul class="list services-list">
+                    <li class="services-list__item">
+                        <a href="" class="link services-list__link">
                             
-                            <h3 class="services-list__title">Social Media Management</h3>
-                        
-                    </a>
-                </li>
-                <li class="services-list__item">
-                    <a href="" class="link services-list__link">
-                        
-                            <div class="services-list__icon services-list__icon--settings">
-                                <svg  width="29" height="29">
-                                    <use href="./img/sprite.svg#settings"></use>
+                                <div class="services-list__icon">
+                                    <svg class="" width="29" height="29">
+                                    <use href="./img/sprite.svg#monitor"></use>
                                 </svg>
                             </div>
-                            <h3 class="services-list__title">Search Engine Opimization</h3>
+                                
+                                <h3 class="services-list__title">Social Media Management</h3>
+                            
+                        </a>
+                    </li>
+                    <li class="services-list__item">
+                        <a href="" class="link services-list__link">
+                            
+                                <div class="services-list__icon services-list__icon--settings">
+                                    <svg  width="29" height="29">
+                                        <use href="./img/sprite.svg#settings"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="services-list__title">Search Engine Opimization</h3>
+                            
+                        </a>
+                    </li>
+                    <li class="services-list__item">
+                        <a href="" class="link services-list__link services-list__item--bottom">
+                            
+                                <div class="services-list__icon services-list__icon--tool">
+                                    <svg  width="29" height="29">
+                                        <use href="./img/sprite.svg#pen-tool"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="services-list__title">Design</h3>
                         
-                    </a>
-                </li>
-                <li class="services-list__item">
-                    <a href="" class="link services-list__link services-list__item--bottom">
+                        </a>
+                    </li>
+                    <li class="services-list__item">
+                        <a href="" class="link services-list__link services-list__item--bottom">
+                            
+                                <div class="services-list__icon services-list__icon--tv">
+                                    <svg  width="29" height="29">
+                                        <use href="./img/sprite.svg#tv"></use>
+                                    </svg>
+                                </div>
+                                <h3 class="services-list__title">Ads</h3>
                         
-                            <div class="services-list__icon services-list__icon--tool">
-                                <svg  width="29" height="29">
-                                    <use href="./img/sprite.svg#pen-tool"></use>
-                                </svg>
-                            </div>
-                            <h3 class="services-list__title">Design</h3>
-                       
-                    </a>
-                </li>
-                <li class="services-list__item">
-                    <a href="" class="link services-list__link services-list__item--bottom">
-                        
-                            <div class="services-list__icon services-list__icon--tv">
-                                <svg  width="29" height="29">
-                                    <use href="./img/sprite.svg#tv"></use>
-                                </svg>
-                            </div>
-                            <h3 class="services-list__title">Ads</h3>
-                     
-                    </a>
-                </li>
-            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
         <!--What do we do-->
-        <section class="container section portfolio">
-            <p class="secondary-subtitles">Our Portfolio</p>
-            <h2 class="secondary-titles">What do we do</h2>
-            <p class="text-description portfolio__desc">all projects that we have already done , proven can help to use more comfortable, then can used by client from our business</p>
-            <ul class="list portfolio-list">
-                <li class="portfolio-list__item">
-                    <img src="./img/design-app.jpg" width="350" height="350" alt="">
-                    <h3 class="portfolio__subject">Design Byte App</h3>
-                </li>
-                <li class="portfolio-list__item">
-                    <img src="./img/cloud-app.jpg"  width="400" height="400" alt="">
-                    <h3 class="portfolio__subject">Cloud App</h3>
-                </li>
-                <li class="portfolio-list__item">
-                    <img src="./img/furniture-app.jpg" width="350" height="350" alt="">
-                    <h3 class="portfolio__subject">Design Furniture App</h3>
-                </li>
-            </ul>
-            <button class="link accent-button">See All Portfolio</button>
+        <section class="section">
+            <div class="container portfolio">
+                <p class="secondary-subtitles">Our Portfolio</p>
+                <h2 class="secondary-titles">What do we do</h2>
+                <p class="text-description portfolio__desc">all projects that we have already done , proven can help to use more comfortable, then can used by client from our business</p>
+                <ul class="list portfolio-list">
+                    <li class="portfolio-list__item">
+                        <picture >
+                            <source srcset="./img/design-app.jpg" media="(min-width: 1400px)" type="image/jpg" />
+                            <source srcset="./img/design-app-mobile.jpg" media="(max-width: 1399px)" />
+                            <img class="portfolio-list__image" src="./img/design-app.jpg" alt="">
+                        </picture>
+                        
+                        <h3 class="portfolio__subject">Design Byte App</h3>
+                    </li>
+                    <li class="portfolio-list__item">
+                        <picture >
+                            <source srcset="./img/cloud-app.jpg" media="(min-width: 1400px)" type="image/jpg" />
+                            <source srcset="./img/cloud-app-mobile.jpg" media="(max-width: 1399px)" />
+                            <img class="portfolio-list__image" src="./img/cloud-app.jpg" alt="">
+                        </picture>
+                        
+                        <h3 class="portfolio__subject">Cloud App</h3>
+                    </li>
+                    <li class="portfolio-list__item">
+                        <picture >
+                            <source srcset="./img/furniture-app.jpg" media="(min-width: 1400px)" type="image/jpg" />
+                            <source srcset="./img/furniture-app-mobile.jpg" media="(max-width: 1399px)" />
+                            <img class="portfolio-list__image" src="./img/furniture-app.jpg" alt="">
+                        </picture>
+                        
+                        <h3 class="portfolio__subject">Design Furniture App</h3>
+                    </li>
+                </ul>
+                <button class="link accent-button">See All Portfolio</button>
+            </div>
         </section>
         <!--People about us -->
-        <section class="container section testimonials">
-            <p class="secondary-subtitles">Testimonials</p>
-            <h2 class="secondary-titles testimonials__title">People Talk about us</h2>
-            <div class="swiper">
-                <ul class="swiper-wrapper">
-                    <!-- Slides -->
-                    <li class="swiper-slide testimonials-list__item">
-                        <div class="testimonials-list__info">
-                            <img class="testimonials-list__img" src="./img/creative-manager.jpg" alt="">
-                            <div>
-                                <h3 class="testimonials-list__name">Angel Rose</h3>
-                                <p class="testimonials-list__position">Creative Manager</p>
-                            </div>
+        <section class="section testimonials">
+                <p class="secondary-subtitles">Testimonials</p>
+                <h2 class="secondary-titles testimonials__title">People Talk about us</h2>
+                    <div id="craouselContainer" class="swiper-container">
+                        <div class="swiper-wrapper" id="slideHolder">
                         </div>
-                        <p class="text-description testimonials-list_desc">There are many variations passages of Lorem Ipsum majority some by words which don't look .
-                        </p>
-                    </li>
-                    <li class="swiper-slide testimonials-list__item">
-                        <div class="testimonials-list__info">
-                            <img class="testimonials-list__img" src="./img/creative-manager.jpg" alt="">
-                            <div>
-                                <h3 class="testimonials-list__name">Angel Rose</h3>
-                                <p class="testimonials-list__position">Creative Manager</p>
-                            </div>
+                        <div class="swiper-pagination">
                         </div>
-                        <p class="text-description testimonials-list_desc">There are many variations passages of Lorem Ipsum majority some
-                            by words which don't look .
-                        </p>
-                    </li>
-                    <li class="swiper-slide testimonials-list__item">
-                        <div class="testimonials-list__info">
-                            <img class="testimonials-list__img" src="./img/creative-manager.jpg" alt="">
-                            <div>
-                                <h3 class="testimonials-list__name">Angel Rose</h3>
-                                <p class="testimonials-list__position">Creative Manager</p>
-                            </div>
-                        </div>
-                        <p class="text-description testimonials-list_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus commodi maiores ipsam perspiciatis ab iste!
-                        </p>
-                    </li>
-                    <li class="swiper-slide testimonials-list__item">
-                        <div class="testimonials-list__info">
-                            <img class="testimonials-list__img" src="./img/creative-manager.jpg" alt="">
-                            <div>
-                                <h3 class="testimonials-list__name">Angel Rose</h3>
-                                <p class="testimonials-list__position">Creative Manager</p>
-                            </div>
-                        </div>
-                        <p class="text-description testimonials-list_desc">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, repellat! Expedita, laborum quos sed impedit saepe reprehenderit dolorum beatae ad debitis quae nesciunt. Fugit perspiciatis a quisquam, non iure asperiores.
-                        </p>
-                    </li>
-                    <li class="swiper-slide testimonials-list__item">
-                        <div class="testimonials-list__info">
-                            <img class="testimonials-list__img" src="./img/creative-manager.jpg" alt="">
-                            <div>
-                                <h3 class="testimonials-list__name">Angel Rose</h3>
-                                <p class="testimonials-list__position">Creative Manager</p>
-                            </div>
-                        </div>
-                        <p class="text-description testimonials-list_desc">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, totam!
-                        </p>
-                    </li>
-       
-                </ul>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            
             </div>
         </section>
         <!--Collaboration -->
-        <section class="container section collaboration">
-        <div class="collaboration__info"> 
+        <section class="section">
+            <div class="container collaboration">
+            <ul class="list collaboration-list">
+                <li>
+                    <picture class="collaboration-list__team">
+                        <source srcset="./img/team-work.jpg" media="(min-width: 768px)" type="image/jpg" />
+                        <source srcset="./img/team-work-mobile.jpg" media="(max-width: 767px)" />
+                        <img   src="./img/team-work.jpg" alt="">
+                    </picture>
+                </li>
+                <li>
+                    <picture class="collaboration-list__speech">
+                        <source srcset="./img/meeting.jpg" media="(min-width: 768px)" type="image/jpg" />
+                        <source srcset="./img/meeting-mobile.jpg" media="(max-width: 767px)" />
+                        <img  src="./img/meeting.jpg" alt="">
+                    </picture>
+                </li>
+            </ul>
+        <div class="collaboration__info">
             <h2 class="secondary-titles collaboration__title">Interesting Collaboration With Us?</h2> 
             <p class="text-description collaboration__desc">Help you to reach your business goal</p>
             <button class="accent-button btn-reverse">Get Started</button>
         </div>
-        <ul class="list collaboration-list">
-            <li><img class="collaboration-list__team" src="./img/team-work.jpg" alt=""></li>
-            <li><img class="collaboration-list__speech" src="./img/meeting.jpg" alt=""></li>
-        </ul>
+
+    </div>
         </section>
     </main>
     <!--Footer-->
@@ -314,7 +312,7 @@
                         <li class="footer-info-sublist__item">Contact Us</li>
                     </ul>
                 </li>
-                <li class="footer-info-list__item">
+                <li class="footer-info-list__item test">
                     <h2 class="footer-info-list__title">Contact</h2>
                     <ul class="list footer-info-sublist">
                         <li class="footer-info-sublist__item"><a href="tel:380995125521" class="link footer-info-sublist__link">(+380) 995125521</a></li>
@@ -358,19 +356,14 @@
     </div>
     </footer>
 </body>
-<script src="./index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script>const swiper = new Swiper('.swiper', {
-        direction: 'horizontal',
-        loop: true,
 
-        pagination: {
-            el: '.swiper-pagination',
-        },
+<script src="./js/swiper.js"></script>
+<script src="./js/burger-menu.js" ></script>
 
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });</script>
+
+
+<script>
+    
+</script>
 </html>

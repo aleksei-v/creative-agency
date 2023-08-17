@@ -1,28 +1,29 @@
-.footer {
-    background-color: var(--background-color);
-    color: var(--secondary-text-color);
-}
-.footer-container {
-    padding: 132px 83px 33px 83px;
-}
-.footer-info {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 76px;
-}
 
-.footer-info-list {
-    max-width: 980px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 60px;
+.footer-container {
+    padding: 45px 34px 60px 26px;
+    
 }
 
 .footer-logo {
+    max-width: 185px;
     max-height: 88px;
+    margin-bottom: 80px;
     padding: 18px 26px;
     border-radius: 20px;
-    background-color: var(--backgroud-light-color);
+}
+.footer-info-sublist__link {
+    transition: color 250ms var(--timing-function);
+}
+.footer-info-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 90px;
+}
+
+.footer-info-list__item:not(:last-child) {
+    
+    margin-bottom: 45px;
 }
 
 .footer-info-list__title {
@@ -31,18 +32,12 @@
 }
 .adress,
 .footer-info-sublist__item{
-    @include font (18px, 400, 22px);
+    @include font (16px, 400, 18px);
 }
 .footer-info-sublist__item:not(:last-child){
     margin-bottom: 30px;
 }
-.footer-info-sublist__link {
-    color: inherit;
-    transition: color 250ms var(--timing-function);
-    &:hover {
-        color: var(--major-text-color);
-    }
-}
+
 
 .social-list {
     margin: 0 auto 16px auto;
@@ -51,12 +46,10 @@
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    border-bottom: 1px solid var(--backgroud-light-color);
 }
 
 
 .social-list__link {
-    background-color: var(--backgroud-light-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,4 +60,31 @@
 
 .copyright {
     text-align: center;
+}
+@media screen and (min-width: 760px) {
+.footer-info-list {
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+}
+}
+@media screen and (min-width: 1400px) {
+.footer-info-list {
+        max-width: 980px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 60px;
+    }
+.adress,
+.footer-info-sublist__item {
+    @include font (18px, 400, 22px);
+}
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 76px;
+}
+.footer-container {
+    padding: 132px 83px 33px 83px;
+
+}
 }

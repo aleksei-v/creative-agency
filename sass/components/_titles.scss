@@ -1,16 +1,25 @@
 .secondary-titles {
     font-family: 'Nunito', sans-serif;
 
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 
-    @include font(55px, 700, 66px);
-
-    color: var(--color-titles);
+    @include font(28px, 700, 36px);
 }
 
 .secondary-subtitles {
-margin-bottom: 20px;
-    @include font (24px, 600, 24px);
-    letter-spacing: 0.24px;
-    color: var(--accent-color);
+    margin-bottom: 10px;
+    @include font (14px, 600, 16px);
+    letter-spacing: 0.14px;
+}
+@media screen and (min-width: 1400px) {
+    .secondary-titles {
+        margin-bottom: 30px;
+
+        @include font(55px, 700, 66px);
+    }
+    .secondary-subtitles {
+        margin-bottom: 20px;
+        @include font (24px, 600, 26px);
+        letter-spacing: 0.24px;
+    }
 }

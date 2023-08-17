@@ -1,9 +1,13 @@
 .text-description {
     
     text-align: center;
-
-    @include font (20px, 400, 30px);
+    @include font (14px, 400, 24px);
     letter-spacing: 0.2px;
+}
 
-    color: var(--major-text-color);
+@media screen and (min-width: 768px) {
+    .text-description {
+        @include font (20px, 400, 30px);
+        letter-spacing: 0.14px;
+    } 
 }
