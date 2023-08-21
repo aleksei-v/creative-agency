@@ -127,7 +127,12 @@
                     make your content look interesting and make people look for your business</p>
                     <ul class="list team__button-list">
                         <li><button class="accent-button btn-reverse">About us</button></li>
-                        <li><button class="accent-button">Our Story</button></li>
+                        <li class="team__button-list--second"><button class="accent-button story-btn">
+                            <svg class="story-btn__icon" width="20" height="20">
+                                <use href="./img/sprite.svg#play-circle"></use>
+                            </svg>
+                           <span>Our Story</span> 
+                    </button></li>
                     </ul>
                     </div>
                     <picture>
@@ -146,8 +151,9 @@
                 <h2 class="secondary-titles services__title">Perfect and Fast Movement</h2>
                 <p class="text-description services__desc">We move with make a Creative Strategy for help your business goal, we help to improve your income by a services we have.
                 make your content look interesting and make people look for your business</p>
-                <a href="" class="link secondary-subtitles services__more">Read more
-                    <svg class="" width="16" height="16">
+                <a href="" class="link secondary-subtitles services__more">
+                    <span>Read more</span>
+                    <svg class="services__icon-more" width="16" height="16">
                         <use href="./img/sprite.svg#arrow"></use>
                     </svg>
                 </a>
@@ -156,8 +162,8 @@
                     <li class="services-list__item">
                         <a href="" class="link services-list__link">
                             
-                                <div class="services-list__icon">
-                                    <svg class="" width="29" height="29">
+                                <div class="services-list__elem services-list__elem--monitor">
+                                    <svg class="services-list__icon" width="29" height="29">
                                     <use href="./img/sprite.svg#monitor"></use>
                                 </svg>
                             </div>
@@ -169,8 +175,8 @@
                     <li class="services-list__item">
                         <a href="" class="link services-list__link">
                             
-                                <div class="services-list__icon services-list__icon--settings">
-                                    <svg  width="29" height="29">
+                                <div class="services-list__elem services-list__elem--settings">
+                                    <svg class="services-list__icon" width="29" height="29">
                                         <use href="./img/sprite.svg#settings"></use>
                                     </svg>
                                 </div>
@@ -181,8 +187,8 @@
                     <li class="services-list__item">
                         <a href="" class="link services-list__link services-list__item--bottom">
                             
-                                <div class="services-list__icon services-list__icon--tool">
-                                    <svg  width="29" height="29">
+                                <div class="services-list__elem services-list__elem--tool">
+                                    <svg class="services-list__icon" width="29" height="29">
                                         <use href="./img/sprite.svg#pen-tool"></use>
                                     </svg>
                                 </div>
@@ -193,8 +199,8 @@
                     <li class="services-list__item">
                         <a href="" class="link services-list__link services-list__item--bottom">
                             
-                                <div class="services-list__icon services-list__icon--tv">
-                                    <svg  width="29" height="29">
+                                <div class="services-list__elem services-list__elem--tv">
+                                    <svg class="services-list__icon" width="29" height="29">
                                         <use href="./img/sprite.svg#tv"></use>
                                     </svg>
                                 </div>
@@ -259,17 +265,17 @@
             <div class="container collaboration">
             <ul class="list collaboration-list">
                 <li>
-                    <picture class="collaboration-list__team">
+                    <picture >
                         <source srcset="./img/team-work.jpg" media="(min-width: 768px)" type="image/jpg" />
                         <source srcset="./img/team-work-mobile.jpg" media="(max-width: 767px)" />
-                        <img   src="./img/team-work.jpg" alt="">
+                        <img  class="collaboration-list__team" src="./img/team-work.jpg" alt="">
                     </picture>
                 </li>
                 <li>
-                    <picture class="collaboration-list__speech">
+                    <picture >
                         <source srcset="./img/meeting.jpg" media="(min-width: 768px)" type="image/jpg" />
                         <source srcset="./img/meeting-mobile.jpg" media="(max-width: 767px)" />
-                        <img  src="./img/meeting.jpg" alt="">
+                        <img class="collaboration-list__speech" src="./img/meeting.jpg" alt="">
                     </picture>
                 </li>
             </ul>

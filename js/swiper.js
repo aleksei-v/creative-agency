@@ -36,7 +36,7 @@ const testiomnialData = [
         review: "Life-altering find! Indispensable now. Enthusiastically suggest to all. A game-changer for everyone!"
     }]
 const slideHolder = document.querySelector("#slideHolder")
-for (let i of testiomnialData) slideHolder.innerHTML += `<div class="swiper-slide "> <div class="ImgHolder"><img src="${i.avatar}"></div><div class="ContentHolder"><h3>${i.name}</h3><p>${i.review}</p></div></div>`
+for (let i of testiomnialData) slideHolder.innerHTML += `<div class="swiper-slide"> <div class="ImgHolder"><img src="${i.avatar}"></div><div class="ContentHolder"><h3>${i.name}</h3><p>${i.review}</p></div></div>`
 
 const swiper = new Swiper('#craouselContainer', {
     grabCursor: true,

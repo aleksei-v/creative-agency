@@ -364,6 +364,7 @@ img {
   animation: imgScale 1500ms forwards;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 55px;
 }
 
 .hero__area {
@@ -387,6 +388,7 @@ img {
 
 .hero-article__image {
   margin-right: 5px;
+  border-radius: 50%;
 }
 
 .hero-article__author {
@@ -562,11 +564,24 @@ img {
   max-width: 562px;
   max-height: 462px;
   margin: 0 auto;
+  border-radius: 30px;
+}
+
+.story-btn {
+  display: grid;
+  grid-template-columns: 0.25fr 1.75fr;
+  align-items: center;
+  gap: 5px;
+  padding: 12px 35px;
+  min-width: 150px;
 }
 
 @media screen and (max-width: 767px) {
   .team__image {
-    max-width: 300px;
+    min-width: 200px;
+  }
+  .story-btn {
+    padding: 10px 35px;
   }
 }
 @media screen and (max-width: 1399px) {
@@ -619,6 +634,9 @@ img {
     grid-template-columns: 170px 170px;
     gap: 25px;
   }
+  .story-btn {
+    min-width: 185px;
+  }
 }
 .services {
   text-align: center;
@@ -629,8 +647,17 @@ img {
 }
 
 .services__more {
-  display: block;
+  display: flex;
   text-align: start;
+  align-items: center;
+}
+
+.services__more span {
+  margin-right: 5px;
+}
+
+.services__icon-more {
+  stroke: var(--accent-color);
 }
 
 .services-list__link {
@@ -641,7 +668,7 @@ img {
   padding: 34px 34px;
 }
 
-.services-list__icon {
+.services-list__elem {
   width: 70px;
   height: 70px;
   display: flex;
@@ -649,6 +676,14 @@ img {
   align-items: center;
   margin-bottom: 32px;
   border-radius: 50%;
+}
+
+.services-list__elem--monitor {
+  background-color: var(--accent-color);
+}
+
+.services-list__icon {
+  stroke: var(--backgroud-secondary-color);
 }
 
 .services-list__item {
@@ -724,6 +759,7 @@ img {
 
 .portfolio-list__image {
   margin: 0 auto;
+  border-radius: 30px;
 }
 
 .portfolio__subject {
@@ -752,6 +788,7 @@ img {
     text-align: center;
     bottom: 40px;
     left: 24px;
+    color: #E2E2E2;
     font-size: 24px;
     font-weight: 700;
     line-height: 1.08;
@@ -856,6 +893,7 @@ img {
 .swiper-slide p {
   font-size: 0.9rem;
   padding: 5px;
+  color: var(--major-text-color);
 }
 
 @media (max-width: 860px) {
@@ -964,6 +1002,10 @@ img {
   margin-bottom: 45px;
 }
 
+.social-list__icon {
+  stroke: #383638;
+}
+
 .footer-info-list__title {
   margin-bottom: 34px;
   font-size: 22px;
@@ -989,6 +1031,7 @@ img {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border-bottom: 1px solid white;
 }
 
 .social-list__link {
@@ -998,6 +1041,7 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  background-color: white;
 }
 
 .copyright {

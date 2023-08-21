@@ -25,7 +25,9 @@
     
     margin-bottom: 45px;
 }
-
+.social-list__icon {
+ stroke: #383638;
+}
 .footer-info-list__title {
     margin-bottom: 34px;
     @include font (22px, 700, 26px)
@@ -46,6 +48,7 @@
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border-bottom: 1px solid #ffff;
 }
 
 
@@ -56,6 +59,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    background-color: #ffff;
 }
 
 .copyright {

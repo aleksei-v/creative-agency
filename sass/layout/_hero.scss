@@ -53,6 +53,7 @@
     animation: imgScale 1500ms forwards;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 55px;
 }
 
 .hero__area {
@@ -73,6 +74,7 @@
 }
 .hero-article__image {
     margin-right: 5px;
+    border-radius: 50%
 }
 .hero-article__author {
     @include font (5px, 600, 7px);

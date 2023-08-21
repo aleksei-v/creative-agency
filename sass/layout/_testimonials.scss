@@ -42,6 +42,7 @@
     padding: 0px;
     font-family: Nunito;
     border-radius: 16px;
+
 }
 
 .swiper-slide .ImgHolder {
@@ -90,6 +91,7 @@
 .swiper-slide p {
     font-size: 0.9rem;
     padding: 5px;
+    color: var(--major-text-color);
 }
 
 @media (max-width:860px) {

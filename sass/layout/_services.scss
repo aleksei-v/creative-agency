@@ -9,10 +9,16 @@
 }
 
 .services__more {
-    display: block;
+    display: flex;
     text-align: start;
+    align-items: center;
 }
-
+.services__more span {
+    margin-right: 5px;
+}
+.services__icon-more {
+    stroke: var(--accent-color);
+}
 .services-list__link {
     display: flex;
     justify-content: center;
@@ -22,22 +28,29 @@
 
 }
 
-.services-list__icon {
+.services-list__elem {
     width: 70px;
     height: 70px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 32px;
-    border-radius: 50%
+    border-radius: 50%;
+
 }
-
-
+.services-list__elem--monitor {
+    background-color: var(--accent-color);
+}
+.services-list__icon {
+    stroke: var(--backgroud-secondary-color);
+}
 .services-list__item {
     max-width: 262px;
     max-height: 270px;
     border-radius: 30px;
-        transition: transform 250ms var(--timing-function);
+
+
+    transition: transform 250ms var(--timing-function);
 
     &:hover{
             transform: scale(1.1);

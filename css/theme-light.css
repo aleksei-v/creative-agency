@@ -2,7 +2,7 @@
     --accent-color: #377DFF;
     --color-titles: #1D1D1D;
     --background-color: #383638;
-    --backgroud-light-color: #FDFFFF;
+    --backgroud-secondary-color: #FDFFFF;
     --secondary-text-color: #ffffff;
     --major-text-color: #787878;
 }
@@ -12,7 +12,7 @@
 .accent-button {
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
-    background: var(--backgroud-light-color);
+    background: var(--backgroud-secondary-color);
 }
   .accent-button:hover,
   .accent-button:focus {
@@ -26,8 +26,11 @@
  .btn-reverse:hover,
  .btn-reverse:focus {
      color: var(--accent-color);
-     background: var(--backgroud-light-color);
+     background: var(--backgroud-secondary-color);
  }
+.story-btn__icon {
+    stroke: var(--accent-color);
+}
 
 /*burger-menu*/
 @media screen and (max-width: 1399px) {
@@ -38,7 +41,7 @@
         fill: var(--accent-color);
     }
     .mobile-menu {
-        background-color: var(--backgroud-light-color);
+        background-color: var(--backgroud-secondary-color);
 
     }
     .mobile-menu__close {
@@ -69,22 +72,22 @@
 /*swiper*/
 .swiper-slide {
 
-    background-color: var(--backgroud-light-color);
+    background-color: var(--backgroud-secondary-color);
 
     box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
 }
 
 .swiper-slide .ImgHolder {
-    background-color: var(--backgroud-light-color);
+    background-color: var(--backgroud-secondary-color);
 }
 
 
 .ContentHolder {
-    background-color: var(--backgroud-light-color);
+    background-color: var(--backgroud-secondary-color);
 }
 
 .swiper-pagination-bullet {
-    background-color: var(--backgroud-light-color);
+    background-color: var(--backgroud-secondary-color);
     border: 1px solid var(--accent-color);
 }
 
@@ -93,12 +96,12 @@
 }
 
 .swiper-button {
-    border: 1px solid var(--backgroud-light-color);
+    border: 1px solid var(--backgroud-secondary-color);
 }
 
 .swiper-slide img {
     border: 3px solid var(--accent-color);
-    outline: 2px solid var(--backgroud-light-color);
+    outline: 2px solid var(--backgroud-secondary-color);
 }
 
 .swiper-slide h3 {
@@ -107,7 +110,7 @@
 
 /*theme-switcher*/
 .theme {
-    background: var(--backgroud-light-color);
+    background-color: var(--backgroud-secondary-color);
 
     box-shadow: 0 0 10px rgba(39, 38, 40, 0.4);
 }
@@ -129,7 +132,7 @@
 }
 
 .footer-logo {
-    background-color: var(--backgroud-light-color);
+    background-color: var(--backgroud-secondary-color);
 }
 
 
@@ -139,12 +142,8 @@
 .footer-info-sublist__link:hover {
     color: var(--major-text-color);
 }
-.social-list {
-    border-bottom: 1px solid var(--backgroud-light-color);
-}
-.social-list__link {
-    background-color: var(--backgroud-light-color);
-}
+
+
 
 /*header*/
 .logo__title {
@@ -174,7 +173,7 @@
 
 
 .hero-article {
-    background-color: var(--backgroud-light-color);
+    background-color: var(--backgroud-secondary-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -184,7 +183,7 @@
 }
 
 .great-review {
-    background-color: var(--backgroud-light-color);
+    background-color: var(--backgroud-secondary-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -194,29 +193,23 @@
 
 /*portfolio*/
 .portfolio__subject {
-    color: var(--backgroud-light-color);
+    color: var(--backgroud-secondary-color);
 }
 
-@media screen and (min-width: 768px) {
-    .portfolio__subject {
-        color: var(--backgroud-light-color);
-    }
-}
 
 /*services*/
-.services-list__icon {
-    background-color: var(--accent-color);
-}
 
-.services-list__icon--settings {
+
+
+.services-list__elem--settings {
     background-color: #FF2D2D;
 }
 
-.services-list__icon--tool {
+.services-list__elem--tool {
     background-color: #7CE761;
 }
 
-.services-list__icon--tv {
+.services-list__elem--tv {
     background-color: #FFA800;
 }
 
@@ -239,7 +232,7 @@
 }
 
 .swiper-button {
-    border: 1px solid var(--backgroud-light-color);
+    border: 1px solid var(--backgroud-secondary-color);
 }
 
 .theme__change[data-theme="dark"] {
