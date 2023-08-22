@@ -1,8 +1,8 @@
 .text-description {
-    
     text-align: center;
     @include font (14px, 400, 24px);
     letter-spacing: 0.2px;
+    color: var(--major-text-color);
 }
 
 @media screen and (min-width: 768px) {

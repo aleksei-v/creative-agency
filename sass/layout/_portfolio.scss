@@ -24,6 +24,7 @@
     left: 44px;
     @include font (14px, 700, 16px);
     letter-spacing: 0.072px;
+    color: #E2E2E2;
 }
 @media screen and (max-width: 1399px) {
     .portfolio-list__item {
@@ -31,19 +32,15 @@
         }
 }
 @media screen and (min-width: 768px) {
-   
     .portfolio__desc {
         max-width: 674px;
         margin-bottom: 48px;
-
     }
-    
     .portfolio__subject {
-        position: absolute;
-        text-align: center;
+
         bottom: 40px;
         left: 24px;
-        color: #E2E2E2;
+        
         @include font (24px, 700, 26px);
         letter-spacing: 0.072px;
     }

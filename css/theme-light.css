@@ -10,7 +10,6 @@
 
 /*accent-button*/
 .accent-button {
-    border: 1px solid var(--accent-color);
     color: var(--accent-color);
     background: var(--backgroud-secondary-color);
 }
@@ -26,213 +25,36 @@
  .btn-reverse:hover,
  .btn-reverse:focus {
      color: var(--accent-color);
-     background: var(--backgroud-secondary-color);
+     background-color: var(--backgroud-secondary-color);
  }
 .story-btn__icon {
     stroke: var(--accent-color);
 }
-
+.team__button-list--second:hover .story-btn__icon,
+.team__button-list--second:focus .story-btn__icon {
+    stroke: var(--backgroud-secondary-color);
+}
 /*burger-menu*/
 @media screen and (max-width: 1399px) {
-    .burger-menu {
-        background-color: transparent;
+    .burger-menu__icon {
+        stroke: #1D1D1D;
     }
-    .burger-menu__icon:hover {
-        fill: var(--accent-color);
-    }
-    .mobile-menu {
-        background-color: var(--backgroud-secondary-color);
-
-    }
-    .mobile-menu__close {
-        background-color: transparent;
-    }
-    .mobile-menu__close:hover .btn-close__icon {
-        fill: var(--accent-color);
-    }
-    .mobile-list__item {
-        color: var(--color-titles);
-    }
-    .mobile-list__item .mobile-list__link:hover {
-        color: var(--accent-color);
-    }
-    .mobile-list__item .mobile-list__link {
-        color: var(--color-titles);
-    }
-    .mobile-list__item .mobile-list__link--active {
-        color: var(--accent-color);
-    }
-}
-
-/*description*/
-.text-description {
-    color: var(--major-text-color);
 }
 
 /*swiper*/
-.swiper-slide {
-
-    background-color: var(--backgroud-secondary-color);
-
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
-}
 
 .swiper-slide .ImgHolder {
     background-color: var(--backgroud-secondary-color);
 }
 
-
-.ContentHolder {
-    background-color: var(--backgroud-secondary-color);
-}
-
-.swiper-pagination-bullet {
-    background-color: var(--backgroud-secondary-color);
-    border: 1px solid var(--accent-color);
-}
-
-.swiper-pagination-bullet-active {
-    background-color: var(--accent-color);
-}
-
-.swiper-button {
-    border: 1px solid var(--backgroud-secondary-color);
-}
-
-.swiper-slide img {
-    border: 3px solid var(--accent-color);
-    outline: 2px solid var(--backgroud-secondary-color);
-}
-
-.swiper-slide h3 {
-    color: var(--accent-color);
-}
-
 /*theme-switcher*/
 .theme {
     background-color: var(--backgroud-secondary-color);
-
-    box-shadow: 0 0 10px rgba(39, 38, 40, 0.4);
-}
-
-/*titles*/
-.secondary-titles {
-    color: var(--color-titles);
-}
-
-.secondary-subtitles {
-    color: var(--accent-color);
-}
-
-/*footer*/
-
-.footer {
-    background-color: var(--background-color);
-    color: var(--secondary-text-color);
-}
-
-.footer-logo {
-    background-color: var(--backgroud-secondary-color);
-}
-
-
-.footer-info-sublist__link {
-    color: inherit;  
-}
-.footer-info-sublist__link:hover {
-    color: var(--major-text-color);
-}
-
-
-
-/*header*/
-.logo__title {
-    color: var(--color-titles);
-}
-
-
-.nav-list__item a {
-    color: var(--color-titles);
-
-   
-}
- .nav-list__item:hover,
- .nav-list__item:focus {
-     color: var(--accent-color);
- }
-.nav-list__item--active a {
-    color: var(--accent-color);
 }
 
 /*hero*/
-.hero__title {
-    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
-
-    color: var(--color-titles);
-}
-
-
-.hero-article {
-    background-color: var(--backgroud-secondary-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-.hero-article__post {
-    color: var(--major-text-color);
-}
-
-.great-review {
-    background-color: var(--backgroud-secondary-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 .great-review__title {
-    color: var(--major-text-color)
-}
-
-/*portfolio*/
-.portfolio__subject {
-    color: var(--backgroud-secondary-color);
-}
-
-
-/*services*/
-
-
-
-.services-list__elem--settings {
-    background-color: #FF2D2D;
-}
-
-.services-list__elem--tool {
-    background-color: #7CE761;
-}
-
-.services-list__elem--tv {
-    background-color: #FFA800;
-}
-
-.services-list__item {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(0, 0, 0, 0.10);
-}
-
-.services-list__title {
-    color: var(--color-titles);
-}
-
-/*testimonials*/
-.testimonials-list__name {
-    color: var(--accent-color);
-}
-
-.testimonials-list__position {
     color: var(--major-text-color);
-}
-
-.swiper-button {
-    border: 1px solid var(--backgroud-secondary-color);
 }
 
 .theme__change[data-theme="dark"] {

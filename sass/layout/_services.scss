@@ -1,9 +1,9 @@
 .services {
-    text-align: center;
+    text-align: start;
 }
-
-
-
+.test {
+    display: block;
+}
 .services__desc {
     margin-bottom: 36px;   
 }
@@ -12,6 +12,7 @@
     display: flex;
     text-align: start;
     align-items: center;
+    justify-content: end;
 }
 .services__more span {
     margin-right: 5px;
@@ -41,6 +42,17 @@
 .services-list__elem--monitor {
     background-color: var(--accent-color);
 }
+.services-list__elem--settings {
+    background-color: #FF2D2D;
+}
+
+.services-list__elem--tool {
+    background-color: #7CE761;
+}
+
+.services-list__elem--tv {
+    background-color: #FFA800;
+}
 .services-list__icon {
     stroke: var(--backgroud-secondary-color);
 }
@@ -48,8 +60,8 @@
     max-width: 262px;
     max-height: 270px;
     border-radius: 30px;
-
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.10);
     transition: transform 250ms var(--timing-function);
 
     &:hover{
@@ -59,7 +71,8 @@
 }
 .services-list__title {
     max-width: 156px;
-    @include font (22px, 700, 32px)
+    @include font (22px, 700, 32px);
+    color: var(--color-titles);
 }
 
 .services-list__item--bottom {

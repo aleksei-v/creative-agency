@@ -1,15 +1,19 @@
 .secondary-titles {
-    font-family: 'Nunito', sans-serif;
-
     margin-bottom: 25px;
 
+    font-family: 'Nunito', sans-serif;
     @include font(28px, 700, 36px);
+
+    color: var(--color-titles);
 }
 
 .secondary-subtitles {
     margin-bottom: 10px;
+
     @include font (14px, 600, 16px);
     letter-spacing: 0.14px;
+
+    color: var(--accent-color);
 }
 @media screen and (min-width: 1400px) {
     .secondary-titles {
@@ -19,6 +23,7 @@
     }
     .secondary-subtitles {
         margin-bottom: 20px;
+
         @include font (24px, 600, 26px);
         letter-spacing: 0.24px;
     }

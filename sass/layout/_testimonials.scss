@@ -35,14 +35,18 @@
     height: fit-content;
     display: flex;
     height: auto;
-    border-radius: 5px;
     overflow: hidden;
     align-items: flex-start;
     flex-direction: column;
-    padding: 0px;
-    font-family: Nunito;
-    border-radius: 16px;
 
+    padding: 0px;
+
+    font-family: Nunito;
+
+    border-radius: 5px;
+    border-radius: 16px;
+    background-color: var(--backgroud-secondary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
 }
 
 .swiper-slide .ImgHolder {
@@ -62,6 +66,7 @@
     top: -5px;
     z-index: -1;
     right: 0px;
+    background-color: var(--backgroud-secondary-color);
 }
 
 .ContentHolder {
@@ -72,20 +77,30 @@
 
 .swiper-pagination-bullet {
     opacity: 1;
+    background-color: var(--backgroud-secondary-color);
+    border: 1px solid var(--accent-color);
 }
-
+.swiper-pagination-bullet-active {
+    background-color: var(--accent-color);
+}
+.swiper-button {
+    border: 1px solid var(--backgroud-secondary-color);
+}
 .swiper-slide img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     margin: auto;
     object-fit: cover;
+    border: 3px solid var(--accent-color);
+    outline: 2px solid var(--backgroud-secondary-color);
 }
 
 .swiper-slide h3 {
     font-size: 1.1rem;
     text-align: center;
     font-weight: bold;
+    color: var(--accent-color);
 }
 
 .swiper-slide p {
